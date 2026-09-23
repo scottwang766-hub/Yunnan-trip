@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>西双版纳亲子行程手册 · 9.25–10.2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1c2b20;
+    --ink-soft: #46564a;
+    --paper: #f8f3e6;
+    --paper-raised: #fffdf7;
+    --jungle-deep: #163127;
+    --jungle: #2c5f45;
+    --jungle-soft: #dbe9dc;
+    --gold: #b8862c;
+    --gold-bright: #d4a333;
+    --gold-wash: #f3e4bf;
+    --lacquer: #a23e2a;
+    --lacquer-wash: #f6ddd3;
+    --line: #d8cca9;
+    --shadow: rgba(28, 43, 32, 0.14);
+    --radius-l: 22px;
+    --radius-m: 14px;
+    --radius-s: 8px;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #ede8da;
+      --ink-soft: #b9b6a4;
+      --paper: #14201a;
+      --paper-raised: #1b2b22;
+      --jungle-deep: #dbe9dc;
+      --jungle: #7fbf9c;
+      --jungle-soft: #23372a;
+      --gold: #e0b452;
+      --gold-bright: #e9c56a;
+      --gold-wash: #2e2717;
+      --lacquer: #e08769;
+      --lacquer-wash: #33211c;
+      --line: #3a3a2c;
+      --shadow: rgba(0, 0, 0, 0.4);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ede8da;
+    --ink-soft: #b9b6a4;
+    --paper: #14201a;
+    --paper-raised: #1b2b22;
+    --jungle-deep: #dbe9dc;
+    --jungle: #7fbf9c;
+    --jungle-soft: #23372a;
+    --gold: #e0b452;
+    --gold-bright: #e9c56a;
+    --gold-wash: #2e2717;
+    --lacquer: #e08769;
+    --lacquer-wash: #33211c;
+    --line: #3a3a2c;
+    --shadow: rgba(0, 0, 0, 0.4);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(76px + env(safe-area-inset-top, 0px));
+  }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.7;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
+  }
+
+  h1, h2, h3, .display {
+    font-family: "Noto Serif SC", "Songti SC", serif;
+    font-weight: 700;
+    color: var(--jungle-deep);
+    letter-spacing: 0.01em;
+    margin: 0;
+  }
+
+  a { color: inherit; }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    padding: 56px 20px 40px;
+    background:
+      radial-gradient(120% 90% at 15% 0%, var(--jungle-soft) 0%, transparent 55%),
+      linear-gradient(180deg, var(--paper-raised) 0%, var(--paper) 100%);
+    border-bottom: 1px solid var(--line);
+    overflow-x: auto;
+  }
+  .hero-inner { max-width: 760px; margin: 0 auto; }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--jungle);
+    background: var(--jungle-soft);
+    padding: 5px 14px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-size: clamp(34px, 8vw, 52px);
+    line-height: 1.15;
+  }
+  .hero .sub {
+    margin-top: 12px;
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 50ch;
+  }
+  .hero-stats {
+    display: flex;
+    gap: 28px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+  .hero-stat .num {
+    font-family: "Noto Serif SC", serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gold);
+    display: block;
+  }
+  .hero-stat .lbl {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- Alert / tips block ---------- */
+  .alert {
+    margin: 36px 0;
+    border: 1px solid var(--line);
+    border-left: 5px solid var(--lacquer);
+    background: var(--paper-raised);
+    border-radius: var(--radius-m);
+    padding: 26px 24px;
+    box-shadow: 0 6px 18px var(--shadow);
+  }
+  .alert h2 {
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+  .alert .alert-sub {
+    color: var(--ink-soft);
+    font-size: 14.5px;
+    margin-bottom: 18px;
+  }
+  .tip-item {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 6px 12px;
+    padding: 14px 0;
+    border-top: 1px dashed var(--line);
+  }
+  .tip-item:first-of-type { border-top: none; padding-top: 4px; }
+  .tip-icon { font-size: 19px; line-height: 1.4; }
+  .tip-item h3 {
+    font-family: "Noto Sans SC", sans-serif;
+    font-size: 15.5px;
+    font-weight: 700;
+    color: var(--jungle-deep);
+    margin-bottom: 3px;
+  }
+  .tip-item p { margin: 0; font-size: 14.5px; color: var(--ink); }
+  .tip-item p + p { margin-top: 6px; }
+  .tip-item .fine { color: var(--ink-soft); font-size: 13px; }
+
+  /* ---------- Calendar strip ---------- */
+  .calendar {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 4px 2px 14px;
+    margin-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .calendar::-webkit-scrollbar { height: 5px; }
+  .cal-day {
+    flex: 0 0 auto;
+    min-width: 78px;
+    text-align: center;
+    padding: 10px 6px 12px;
+    border-radius: var(--radius-s);
+    border: 1px solid var(--line);
+    background: var(--paper-raised);
+    text-decoration: none;
+  }
+  .cal-day .d { font-size: 12px; color: var(--ink-soft); }
+  .cal-day .n { font-family: "Noto Serif SC", serif; font-size: 20px; font-weight: 700; color: var(--jungle-deep); margin: 2px 0; }
+  .cal-day .tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 999px;
+    background: var(--gold-wash);
+    color: var(--gold);
+  }
+  .cal-day .tag.rest { background: var(--lacquer-wash); color: var(--lacquer); }
+
+  /* ---------- Section heading ---------- */
+  .section-title {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 44px 0 18px;
+  }
+  .section-title h2 { font-size: 24px; }
+  .section-title .count { color: var(--ink-soft); font-size: 14px; }
+
+  /* ---------- Day cards ---------- */
+  .day {
+    scroll-margin-top: 90px;
+    border: 1px solid var(--line);
+    background: var(--paper-raised);
+    border-radius: var(--radius-l);
+    padding: 26px 24px 24px;
+    margin-bottom: 22px;
+    box-shadow: 0 8px 22px var(--shadow);
+  }
+  .day-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  .day-head .who {
+    font-size: 13px;
+    color: var(--gold);
+    font-weight: 600;
+  }
+  .day-head h3 {
+    font-size: 22px;
+    margin-top: 2px;
+  }
+  .day-head .date-badge {
+    font-family: "Noto Serif SC", serif;
+    font-size: 15px;
+    color: var(--ink-soft);
+  }
+  .badges { display: flex; gap: 8px; flex-wrap: wrap; }
+  .badge {
+    font-size: 12.5px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  .badge.effort-轻松 { background: #d4edd1; color: #2a6b2d; border-color: #2a6b2d; }
+  .badge.effort-适中 { background: #fff0b8; color: #8a5e00; border-color: #c89a00; }
+  .badge.effort-较累 { background: #ffd9b8; color: #b8420c; border-color: #d4541a; }
+  .badge.effort-最累 { background: #ffb3a8; color: #c41e0a; border-color: #c41e0a; font-weight: 800; }
+  .badge.effort-最累::before { content: "⚠ "; }
+  :root[data-theme="dark"] .badge.effort-轻松, :root:not([data-theme="light"]) .badge.effort-轻松 { background: #1a3d20; color: #6fd473; border-color: #2a6b2d; }
+  :root[data-theme="dark"] .badge.effort-适中, :root:not([data-theme="light"]) .badge.effort-适中 { background: #2e2410; color: #ffc94a; border-color: #c89a00; }
+  :root[data-theme="dark"] .badge.effort-较累, :root:not([data-theme="light"]) .badge.effort-较累 { background: #3a1f12; color: #ff9a52; border-color: #d4541a; }
+  :root[data-theme="dark"] .badge.effort-最累, :root:not([data-theme="light"]) .badge.effort-最累 { background: #3d1812; color: #ff5e48; border-color: #c41e0a; }
+  .badge.weather { background: var(--jungle-soft); color: var(--jungle); }
+  .badge.holiday { background: var(--lacquer-wash); color: var(--lacquer); }
+
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .meta-item {
+    background: var(--paper);
+    border-radius: var(--radius-s);
+    padding: 10px 12px;
+  }
+  .meta-item .k { font-size: 12px; color: var(--ink-soft); margin-bottom: 2px; }
+  .meta-item .v { font-size: 14.5px; font-weight: 600; }
+
+  .plan {
+    font-size: 16px;
+    white-space: pre-line;
+    margin-bottom: 4px;
+  }
+  .plan strong.route { color: var(--jungle); font-weight: 700; }
+
+  .note-box {
+    margin-top: 16px;
+    background: var(--jungle-soft);
+    border-radius: var(--radius-m);
+    padding: 14px 16px;
+    font-size: 14.5px;
+    color: var(--ink);
+  }
+  .note-box .label {
+    display: block;
+    font-weight: 700;
+    color: var(--jungle-deep);
+    margin-bottom: 6px;
+    font-size: 13.5px;
+  }
+  .note-box ul { margin: 0; padding-left: 1.15em; }
+  .note-box li { margin-bottom: 5px; }
+  .note-box li:last-child { margin-bottom: 0; }
+
+  .alt-plan {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--line);
+  }
+  .alt-plan .plan-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--gold);
+    background: var(--gold-wash);
+    padding: 2px 10px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+  }
+
+  .update-flag {
+    margin-top: 10px;
+    font-size: 13.5px;
+    color: var(--lacquer);
+    background: var(--lacquer-wash);
+    border-radius: var(--radius-s);
+    padding: 10px 12px;
+  }
+  .update-flag b { color: inherit; }
+
+  /* ---------- Rental summary ---------- */
+  .rental {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: var(--gold-wash);
+    border-radius: var(--radius-m);
+    padding: 18px 20px;
+    margin: 8px 0 40px;
+  }
+  .rental .ic { font-size: 26px; }
+  .rental h3 { font-size: 16px; margin-bottom: 4px; }
+  .rental p { margin: 0; font-size: 14px; color: var(--ink); }
+
+  footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    text-align: center;
+  }
+
+  /* ---------- Address cards ---------- */
+  .address-section {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--line);
+  }
+  .address-section-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--jungle-deep);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .address-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 14px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .address-card:hover {
+    border-color: var(--jungle);
+    box-shadow: 0 2px 8px var(--shadow);
+  }
+  .address-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    line-height: 1.4;
+  }
+  .address-body {
+    flex: 1;
+    min-width: 0;
+  }
+  .address-name {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--jungle-deep);
+    margin-bottom: 3px;
+  }
+  .address-text {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    word-break: break-all;
+  }
+  .address-actions {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .addr-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 14px;
+    font-size: 13.5px;
+    font-weight: 700;
+    border: 2px solid var(--line);
+    border-radius: 8px;
+    background: var(--paper-raised);
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    white-space: nowrap;
+    user-select: none;
+    min-height: 40px;
+  }
+  .addr-btn:hover {
+    background: var(--jungle-soft);
+    border-color: var(--jungle);
+    color: var(--jungle-deep);
+  }
+  .addr-btn.copy-btn.copied {
+    background: #d4edd1;
+    border-color: #2a6b2d;
+    color: #2a6b2d;
+  }
+  .addr-btn.nav-btn {
+    background: #1a7f4e;
+    border-color: #0d5c36;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 6px rgba(13,92,54,0.3);
+  }
+  .addr-btn.nav-btn:hover {
+    background: #0d5c36;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(13,92,54,0.4);
+  }
+  :root[data-theme="dark"] .addr-btn.nav-btn, :root:not([data-theme="light"]) .addr-btn.nav-btn {
+    background: #1a7f4e;
+    border-color: #0d5c36;
+    color: #fff;
+  }
+
+  /* ---------- Restaurant cards ---------- */
+  .restaurant-section {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--line);
+  }
+  .restaurant-section-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--jungle-deep);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .restaurant-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .restaurant-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 14px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-s);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .restaurant-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 2px 8px var(--shadow);
+  }
+  .meal-tag {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .meal-tag.lunch { background: var(--gold-wash); color: var(--gold); }
+  .meal-tag.dinner { background: var(--lacquer-wash); color: var(--lacquer); }
+  .restaurant-body { flex: 1; min-width: 0; }
+  .restaurant-name {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--jungle-deep);
+    margin-bottom: 3px;
+  }
+  .restaurant-info {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 5px;
+    line-height: 1.5;
+  }
+
+  /* ---------- Today Focus board ---------- */
+  .today-focus {
+    display: none;
+    margin: 0 0 22px;
+    padding: 20px 22px;
+    border-radius: var(--radius-l);
+    background: linear-gradient(135deg, var(--jungle-deep) 0%, var(--jungle) 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(13,92,54,0.25);
+    position: relative;
+    overflow: hidden;
+  }
+  .today-focus.active { display: block; }
+  .today-focus::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+    animation: focusShimmer 3s infinite;
+  }
+  @keyframes focusShimmer {
+    0% { left: -100%; }
+    100% { left: 200%; }
+  }
+  .today-focus .focus-label {
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.85;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .today-focus .focus-title {
+    font-family: "Noto Serif SC", serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .today-focus .focus-desc {
+    font-size: 14.5px;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+  .today-focus .focus-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--gold-bright);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold-bright);
+    padding-bottom: 1px;
+  }
+  :root[data-theme="dark"] .today-focus, :root:not([data-theme="light"]) .today-focus {
+    background: linear-gradient(135deg, #0d1f14 0%, #1a3d20 100%);
+  }
+
+  /* ---------- Day risk alert banner ---------- */
+  .day-alert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: var(--radius-s);
+    margin-bottom: 14px;
+    font-size: 14.5px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  .day-alert.level-high {
+    background: #ffe5dc;
+    border-left: 4px solid #c41e0a;
+    color: #c41e0a;
+  }
+  .day-alert.level-mid {
+    background: #fff4d6;
+    border-left: 4px solid #b8862c;
+    color: #7a5a00;
+  }
+  .day-alert.level-low {
+    background: #e4f0e2;
+    border-left: 4px solid #2a6b2d;
+    color: #2a6b2d;
+  }
+  :root[data-theme="dark"] .day-alert.level-high, :root:not([data-theme="light"]) .day-alert.level-high {
+    background: #3a1a14; color: #ff8a72;
+  }
+  :root[data-theme="dark"] .day-alert.level-mid, :root:not([data-theme="light"]) .day-alert.level-mid {
+    background: #2e2410; color: #ffc94a;
+  }
+  :root[data-theme="dark"] .day-alert.level-low, :root:not([data-theme="light"]) .day-alert.level-low {
+    background: #1a3d20; color: #6fd473;
+  }
+  .day-alert .alert-emoji { font-size: 18px; flex-shrink: 0; }
+
+  /* ---------- Today highlight on day card ---------- */
+  .day.is-today {
+    border: 2px solid var(--gold-bright);
+    box-shadow: 0 0 0 4px rgba(212,163,51,0.15), 0 8px 22px var(--shadow);
+    position: relative;
+  }
+  .day.is-today::before {
+    content: '今日行程';
+    position: absolute;
+    top: -12px; right: 20px;
+    background: var(--gold-bright);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 999px;
+    box-shadow: 0 2px 8px rgba(212,163,51,0.4);
+  }
+  .cal-day.is-today {
+    border: 2px solid var(--gold-bright);
+    background: var(--gold-wash);
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 480px) {
+    .day { padding: 20px 16px 18px; }
+    .hero { padding: 44px 16px 32px; }
+    .address-card { flex-direction: column; gap: 8px; }
+    .address-actions { align-self: flex-end; }
+    .restaurant-card { flex-direction: column; gap: 8px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="hero-eyebrow">🌿 云南 · 西双版纳 / 普洱</span>
+    <h1>一场关于雨林、傣寨与<br>野象踪迹的亲子之行</h1>
+    <p class="sub">2026 年 9 月 25 日 – 10 月 2 日，8 天 7 晚亲子行程手册</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="num">8天7晚</span><span class="lbl">景洪 · 普洱</span></div>
+      <div class="hero-stat"><span class="num">2个假期</span><span class="lbl">中秋 + 国庆</span></div>
+      <div class="hero-stat"><span class="num">6+</span><span class="lbl">雨林 / 动物园区</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- ============ KEY ALERTS ============ -->
+  <div class="alert">
+    <h2>⚠️ 出行前必读</h2>
+    <p class="alert-sub">结合最新公开信息整理的六件事，建议出发前完整看一遍。</p>
+
+    <div class="tip-item">
+      <div class="tip-icon">📅</div>
+      <div>
+        <h3>假期首尾叠加，中段才是错峰窗口</h3>
+        <p>本次行程横跨了两个法定假期：9 月 25–27 日是中秋节假期（三天不调休），10 月 1–7 日是国庆节假期。9 月 28–30 日是两个假期之间仅有的三个工作日。</p>
+        <p>换句话说：<strong>第 1–3 天（出发、野象谷、太阳河）会遇上中秋假期客流；第 4–6 天大家都在上班，是相对宽松的窗口；第 7–8 天一脚踏入国庆黄金周，尤其返程当天是全年出行最高峰之一。</strong>景区排队、酒店餐厅和路上车流都可以按这个节奏预估。</p>
+      </div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-icon">🌦️</div>
+      <div>
+        <h3>雨季尾声，午后阵雨常见但不误事</h3>
+        <p>9–10 月西双版纳仍处雨季末端，典型模式是午后短时阵雨，来得快去得也快，不太会整天耽误行程，雨后雨林反而更清透。表格里各天的天气是预报参考，建议出发前 2–3 天再用中国天气网或彩云天气核实一次。</p>
+        <p class="fine">随身带：折叠伞或轻便雨衣、速干长裤（防蚊也防雨林划伤）、高倍防晒霜、遮阳帽、强效驱蚊液；进总佛寺一类的佛教场所不能露肩露膝，建议备一条薄披肩。</p>
+      </div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-icon">🎫</div>
+      <div>
+        <h3>两项预约不能省：植物园夜游、雨林徒步</h3>
+        <p>中科院西双版纳热带植物园的夜游讲解需<strong>提前至少 1 天</strong>在官方小程序预约；基诺山雨林徒步同样需要提前一天报名，且雨鞋多为现场购买（约 30 元/双）或选含雨鞋的套餐。</p>
+        <p class="fine">多数景区在 17:00 左右停止售票 / 入园（曼听公园、野象谷等），下午行程别压得太紧。</p>
+      </div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-icon">🐘</div>
+      <div>
+        <h3>野象是真的会出没，不是宣传噱头</h3>
+        <p>野象谷所在的勐养自然保护区一带本身就是野生亚洲象的活动通道；今年 8 月，磨憨附近村寨还发生过约 50 头象群夜间进入居民区的事件，官方确认象群持续活跃。途经保护区附近路段（尤其清晨、黄昏、夜间）请减速慢行，不要鸣笛驱赶、下车围观或投喂，服从当地提示。</p>
+      </div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-icon">🥾</div>
+      <div>
+        <h3>基诺山两条备选线路，难度有明显差异</h3>
+        <p>原计划里"么卓线人少、适合亲子"这个说法，和目前多份实地反馈有出入：<strong>巴朵线全程约 4 公里，八成路段是平缓溯溪，对低龄孩子更友好；么卓线目前普遍被归为 7 公里以上、深入原始雨林的进阶路线，体力要求明显更高。</strong>建议出发前直接和向导确认孩子能走哪条，稳妥起见优先巴朵线。</p>
+      </div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-icon">✈️</div>
+      <div>
+        <h3>返程正撞上国庆黄金周第 2 天</h3>
+        <p>10 月 2 日全国民航客流已进入最高峰阶段。建议比平时更早出发去嘎洒机场（预留 2.5–3 小时），提前完成值机；南京 2 小时 5 分钟的中转时间平时够用，假期建议多留意实时航班动态，避免第一段延误压缩转机时间。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CALENDAR ============ -->
+  <div class="section-title">
+    <h2>行程总览</h2>
+    <span class="count">9 月 25 日 – 10 月 2 日</span>
+  </div>
+  <div class="calendar">
+    <a class="cal-day" href="#day1"><span class="d">周五</span><span class="n">25</span><span class="tag rest">中秋假期</span></a>
+    <a class="cal-day" href="#day2"><span class="d">周六</span><span class="n">26</span><span class="tag rest">中秋假期</span></a>
+    <a class="cal-day" href="#day3"><span class="d">周日</span><span class="n">27</span><span class="tag rest">中秋假期</span></a>
+    <a class="cal-day" href="#day4"><span class="d">周一</span><span class="n">28</span><span class="tag">请假</span></a>
+    <a class="cal-day" href="#day5"><span class="d">周二</span><span class="n">29</span><span class="tag">请假</span></a>
+    <a class="cal-day" href="#day6"><span class="d">周三</span><span class="n">30</span><span class="tag">请假</span></a>
+    <a class="cal-day" href="#day7"><span class="d">周四</span><span class="n">10.1</span><span class="tag rest">国庆假期</span></a>
+    <a class="cal-day" href="#day8"><span class="d">周五</span><span class="n">10.2</span><span class="tag rest">国庆假期</span></a>
+  </div>
+
+  <!-- ============ TODAY FOCUS ============ -->
+  <div class="today-focus" id="todayFocus">
+    <div class="focus-label">📌 今日行程</div>
+    <div class="focus-title" id="focusTitle"></div>
+    <div class="focus-desc" id="focusDesc"></div>
+    <a class="focus-link" id="focusLink" href="#">查看完整行程 ↓</a>
+  </div>
+
+  <!-- ============ DAY 1 ============ -->
+  <div class="section-title"><h2>逐日行程</h2></div>
+
+  <div class="day" id="day1">
+    <div class="day-head">
+      <div>
+        <div class="who">DAY 1</div>
+        <h3>抵达西双版纳</h3>
+      </div>
+      <div class="date-badge">9 月 25 日 · 周五</div>
+    </div>
+    <div class="badges" style="margin-bottom:16px;">
+      <span class="badge effort-轻松">体力：轻松</span>
+      <span class="badge weather">阵雨 23–33℃</span>
+      <span class="badge holiday">中秋假期第 1 天</span>
+    </div>
+    <div class="day-alert level-mid">
+      <span class="alert-emoji">✈️</span>
+      <span>中秋假期首日，浦东机场客流明显走高，建议至少提前 2 小时到机场值机安检；春秋航空无餐食，提前给孩子备好干粮和水。</span>
+    </div>
+    <div class="meta-grid">
+      <div class="meta-item"><div class="k">住宿</div><div class="v">云投喜来登</div></div>
+      <div class="meta-item"><div class="k">交通</div><div class="v">打车 + 飞机</div></div>
+    </div>
+    <p class="plan">14 点前出发，17:10–21:10 春秋航空 9C7605，上海浦东 T2 → 嘎洒机场（无餐食）。</p>
+    <div class="note-box">
+      <span class="label">💡 小贴士</span>
+      <ul>
+        <li>春秋航空这趟不含餐食，建议起飞前在机场用餐或自备干粮和水，尤其带小孩更要备好。</li>
+        <li>当天也是中秋假期首日，浦东机场节前客流通常在出发前一两天就开始走高，值机安检建议多留一点余量。</li>
+        <li>抵达嘎洒机场后车程约 20–30 分钟到市区酒店。</li>
+      </ul>
+    </div>
+    <div class="address-section">
+      <div class="address-section-title">📍 今日目的地地址</div>
+      <div class="address-list">
+        <div class="address-card">
+          <div class="address-icon">✈️</div>
+          <div class="address-body">
+            <div class="address-name">西双版纳嘎洒国际机场</div>
+            <div class="address-text" data-addr="西双版纳嘎洒国际机场">云南省西双版纳傣族自治州景洪市机场公路</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,西双版纳嘎洒国际机场&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="address-card">
+          <div class="address-icon">🏨</div>
+          <div class="address-body">
+            <div class="address-name">西双版纳云投喜来登大酒店</div>
+            <div class="address-text" data-addr="西双版纳云投喜来登大酒店">云南省西双版纳傣族自治州景洪市嘎洒镇云投路1号（曼洒寨子内）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,西双版纳云投喜来登大酒店&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ DAY 2 ============ -->
+  <div class="day" id="day2">
+    <div class="day-head">
+      <div>
+        <div class="who">DAY 2</div>
+        <h3>野象谷 · 曼掌村 · 傣族园</h3>
+      </div>
+      <div class="date-badge">9 月 26 日 · 周六</div>
+    </div>
+    <div class="badges" style="margin-bottom:16px;">
+      <span class="badge effort-适中">体力：适中</span>
+      <span class="badge weather">白天晴 23–33℃</span>
+      <span class="badge holiday">中秋假期第 2 天</span>
+    </div>
+    <div class="day-alert level-high">
+      <span class="alert-emoji">🚗</span>
+      <span>今日串联 3 个景区 + 夜市，车程较长且多为户外活动，注意防晒防中暑；傣族园泼水务必用防水袋装好手机并带一整套换洗衣物。</span>
+    </div>
+    <div class="meta-grid">
+      <div class="meta-item"><div class="k">住宿</div><div class="v">云投喜来登</div></div>
+      <div class="meta-item"><div class="k">交通</div><div class="v">租车（单程约 60km）</div></div>
+      <div class="meta-item"><div class="k">门票</div><div class="v">野象谷门票 2 张已购</div></div>
+    </div>
+    <p class="plan">野象谷 + 曼掌村（古法造纸、慢轮制陶等非遗手工）+ 傣族园（泼水广场，带换洗衣物）+ 江边夜市 or 曼养广夜市（本地人气更旺）。</p>
+    <p class="plan">导航至野象谷 5 号停车场，南门进 → 大象食堂（喂大象，80 元大份）→ 大象科普园（看表演，建议提前占位，可能会被喷水）→ 雨林小剧场（反馈略显平淡）→ 蝴蝶园 / 蜥蜴园 → 南门出，门票约 60 元（儿童免票）。付费机位拍照、雨林沐象、大象洗澡等项目收费较高且需提前预约。索道单程约 35 分钟，都要另付费，体验感来自园区本身，不坐也不影响游玩。</p>
+    <div class="note-box">
+      <span class="label">💡 小贴士</span>
+      <ul>
+        <li>大象科普表演一般分上午、下午各若干场，具体时间以当天入口公示牌为准（各年份场次都会调整），到园后先确认时刻表再规划路线。</li>
+        <li>清晨和黄昏是偶遇野象概率最高的时段；沿途保护区路段请减速慢行，勿鸣笛或下车围观投喂。</li>
+        <li>傣族园泼水建议用防水袋装好手机，备一整套换洗衣物。</li>
+        <li>江边夜市 / 曼养广夜市本地人居多，通常比星光夜市更实惠、更有生活气。</li>
+      </ul>
+    </div>
+    <div class="address-section">
+      <div class="address-section-title">📍 今日目的地地址</div>
+      <div class="address-list">
+        <div class="address-card">
+          <div class="address-icon">🐘</div>
+          <div class="address-body">
+            <div class="address-name">西双版纳野象谷景区</div>
+            <div class="address-text" data-addr="西双版纳野象谷景区">云南省西双版纳傣族自治州景洪市勐养镇213国道旁三岔河</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,西双版纳野象谷景区&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="address-card">
+          <div class="address-icon">🏘️</div>
+          <div class="address-body">
+            <div class="address-name">曼掌村</div>
+            <div class="address-text" data-addr="曼掌村 景洪勐养">云南省西双版纳傣族自治州景洪市勐养镇曼掌村</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,景洪市勐养镇曼掌村&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="address-card">
+          <div class="address-icon">💦</div>
+          <div class="address-body">
+            <div class="address-name">西双版纳傣族园</div>
+            <div class="address-text" data-addr="西双版纳傣族园">云南省西双版纳傣族自治州景洪市勐罕镇橄榄坝傣园路1号</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,西双版纳傣族园&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="address-card">
+          <div class="address-icon">🌃</div>
+          <div class="address-body">
+            <div class="address-name">江边夜市</div>
+            <div class="address-text" data-addr="景洪江边夜市">云南省西双版纳傣族自治州景洪市滨江大道滨江公园侧（近新大桥）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,景洪江边夜市&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="address-card">
+          <div class="address-icon">🌆</div>
+          <div class="address-body">
+            <div class="address-name">曼养广夜市</div>
+            <div class="address-text" data-addr="曼养广夜市">云南省西双版纳傣族自治州景洪市曼养广村（勐海路附近）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,曼养广村 景洪&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="restaurant-section">
+      <div class="restaurant-section-title">🍽️ 今日用餐推荐</div>
+      <div class="restaurant-list">
+        <div class="restaurant-card">
+          <span class="meal-tag lunch">午餐</span>
+          <div class="restaurant-body">
+            <div class="restaurant-name">野象谷林涧农家饭馆</div>
+            <div class="restaurant-info">农家菜，人均约62元。招牌小米辣蒸鱼、特色黄焖鸡、野生牛肝菌、时令野菜、河虾。适合6人用餐。</div>
+            <div class="address-text" data-addr="野象谷林涧农家饭馆 景洪">云南省西双版纳傣族自治州景洪市大渡岗乡野象谷景区附近（野象谷林涧森氧民宿东南约98米）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,野象谷林涧农家饭馆 景洪&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="restaurant-card">
+          <span class="meal-tag lunch">午餐备选</span>
+          <div class="restaurant-body">
+            <div class="restaurant-name">玉单公社傣族文化餐厅</div>
+            <div class="restaurant-info">傣族菜，人均约60元。碳烤土鸡、菠萝饭、香茅草烤鱼、手抓饭、喃咪拼盘。靠近曼掌村，可配合游览安排。菠萝饭、手抓饭较受孩子喜欢。</div>
+            <div class="address-text" data-addr="玉单公社傣族文化餐厅 曼掌村">云南省西双版纳傣族自治州景洪市勐养镇曼掌村曼听路旁（曼掌文化农庄停车场下行50米）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,玉单公社傣族文化餐厅 勐养镇&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="restaurant-card">
+          <span class="meal-tag dinner">晚餐</span>
+          <div class="restaurant-body">
+            <div class="restaurant-name">泰椰天香·六国料理（二分店）</div>
+            <div class="restaurant-info">东南亚菜/六国料理，有儿童餐椅。奶香黄咖喱大虾、泰式海鲜烧烤大拼盘、古法黄金咖喱牛腩。星光夜市入口处，方便饭后逛夜市。</div>
+            <div class="address-text" data-addr="泰椰天香六国料理 告庄西双景">云南省西双版纳傣族自治州景洪市告庄西双景景宰寨39栋1-111号（星光夜市入口处）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,泰椰天香六国料理 告庄西双景&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ DAY 3 ============ -->
+  <div class="day" id="day3">
+    <div class="day-head">
+      <div>
+        <div class="who">DAY 3</div>
+        <h3>普洱太阳河森林公园</h3>
+      </div>
+      <div class="date-badge">9 月 27 日 · 周日</div>
+    </div>
+    <div class="badges" style="margin-bottom:16px;">
+      <span class="badge effort-最累">体力：最累</span>
+      <span class="badge weather">白天晴 19–27℃</span>
+      <span class="badge holiday">中秋假期第 3 天</span>
+    </div>
+    <div class="day-alert level-high">
+      <span class="alert-emoji">🛣️</span>
+      <span>全程往返约 250km，是 8 天里车程最长的一天。建议 8:00 前出发，备好晕车药，中途安排休息；9 点前入园动物最活跃。</span>
+    </div>
+    <div class="meta-grid">
+      <div class="meta-item"><div class="k">住宿</div><div class="v">云投喜来登</div></div>
+      <div class="meta-item"><div class="k">交通</div><div class="v">租车（往返约 250km）</div></div>
+      <div class="meta-item"><div class="k">门票</div><div class="v">成人票已购，儿童车票待购</div></div>
+    </div>
+    <p class="plan">普洱太阳河森林公园（投喂小熊猫），往返约 250km。建议 8:00 前出发，单程约 130km / 2 小时。提前一天购买的 135 元套票（门票 + 摆渡车）价位和目前公开票价一致；儿童免门票但不免车票（双程约 60 元/人）。</p>
+    <div class="note-box">
+      <span class="label">💡 小贴士</span>
+      <ul>
+        <li>建议 9 点前入园，这个时段小熊猫、长臂猿等动物更活跃，游客也相对少。</li>
+        <li>小熊猫互动喂食（苹果条等）通常另需付费，一份约 20 元，园内也能看到白犀牛、猕猴等。</li>
+        <li>往返车程较长，中途可安排一次休息，给孩子和长辈留出缓冲。</li>
+      </ul>
+    </div>
+    <div class="address-section">
+      <div class="address-section-title">📍 今日目的地地址</div>
+      <div class="address-list">
+        <div class="address-card">
+          <div class="address-icon">🐼</div>
+          <div class="address-body">
+            <div class="address-name">普洱太阳河森林公园</div>
+            <div class="address-text" data-addr="普洱太阳河森林公园">云南省普洱市思茅区东南方向33公里处太阳河（南岛河出口驶出约20公里）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,普洱太阳河森林公园&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="restaurant-section">
+      <div class="restaurant-section-title">🍽️ 今日用餐推荐</div>
+      <div class="restaurant-list">
+        <div class="restaurant-card">
+          <span class="meal-tag lunch">午餐</span>
+          <div class="restaurant-body">
+            <div class="restaurant-name">天碧餐厅（景区内）</div>
+            <div class="restaurant-info">森林生态餐厅，主打普洱生态食材，营业时间8:30—18:00。在景区内用餐，减少路途奔波，适合亲子家庭就近解决。</div>
+            <div class="address-text" data-addr="普洱太阳河森林公园天碧餐厅">云南省普洱市思茅区太阳河森林公园景区内</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,天碧餐厅 普洱太阳河森林公园&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="restaurant-card">
+          <span class="meal-tag dinner">晚餐</span>
+          <div class="restaurant-body">
+            <div class="restaurant-name">傣王妃·孔雀宴江景餐厅（告庄店）</div>
+            <div class="restaurant-info">傣味孔雀宴、傣族手抓饭、江景用餐体验。适合带孩子感受傣族文化与竹楼氛围，家庭晚餐好去处。</div>
+            <div class="address-text" data-addr="傣王妃孔雀宴江景餐厅 告庄 景洪">云南省西双版纳傣族自治州景洪市告庄西双景片区</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,傣王妃孔雀宴 告庄西双景 景洪&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ DAY 4 ============ -->
+  <div class="day" id="day4">
+    <div class="day-head">
+      <div>
+        <div class="who">DAY 4</div>
+        <h3>酒店休整 · 曼听公园 · 星光夜市</h3>
+      </div>
+      <div class="date-badge">9 月 28 日 · 周一（请假）</div>
+    </div>
+    <div class="badges" style="margin-bottom:16px;">
+      <span class="badge effort-轻松">体力：轻松</span>
+      <span class="badge weather">多云或晴 23–32℃</span>
+    </div>
+    <div class="day-alert level-low">
+      <span class="alert-emoji">📸</span>
+      <span>轻松日，但曼听公园 17:00 停售门票；旅拍化妆需 1–1.5 小时，旺季需等位，建议提前联系店铺预约。总佛寺不能穿短裤露肩。</span>
+    </div>
+    <div class="meta-grid">
+      <div class="meta-item"><div class="k">住宿</div><div class="v">云投喜来登</div></div>
+      <div class="meta-item"><div class="k">交通</div><div class="v">租车（约半小时车程）</div></div>
+      <div class="meta-item"><div class="k">门票</div><div class="v">曼听公园 40 元</div></div>
+    </div>
+    <p class="plan">上午酒店休整（补觉 / 泳池）。下午曼听公园（傣装拍照，计划 14:30 左右，化妆需 1–1.5 小时，拍摄 40 分钟–1 小时）+ 总佛寺（免费，不能穿短裤，不能对着佛像拍照），般若寺（纯白佛塔）备选。晚上星光夜市（商业化）。</p>
+    <div class="note-box">
+      <span class="label">💡 小贴士</span>
+      <ul>
+        <li>曼听公园门票 40 元，17:00 停止售票入园；与总佛寺相通，凭曼听公园门票即可进入总佛寺，不用二次购票。</li>
+        <li>园内御象文化园的大象表演一般上午、下午各安排 1–2 场，以当日公示为准；旅拍化妆旺季可能需要等位，建议提前联系店铺预约。</li>
+        <li>今天中秋假期已经结束（假期止于 27 日），属于普通工作日，热门景区人流会比前三天缓和一些。</li>
+        <li>星光夜市氛围拍照很出片，但小吃性价比一般；想吃正餐可以去景洪市区。</li>
+      </ul>
+    </div>
+    <div class="address-section">
+      <div class="address-section-title">📍 今日目的地地址</div>
+      <div class="address-list">
+        <div class="address-card">
+          <div class="address-icon">🌺</div>
+          <div class="address-body">
+            <div class="address-name">曼听御花园（曼听公园）</div>
+            <div class="address-text" data-addr="曼听公园">云南省西双版纳傣族自治州景洪市曼听路35号</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,曼听公园 景洪&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="address-card">
+          <div class="address-icon">🛕</div>
+          <div class="address-body">
+            <div class="address-name">西双版纳总佛寺</div>
+            <div class="address-text" data-addr="西双版纳总佛寺">云南省西双版纳傣族自治州景洪市坝吉路18号（曼听公园南门旁）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,西双版纳总佛寺&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="address-card">
+          <div class="address-icon">🕌</div>
+          <div class="address-body">
+            <div class="address-name">般若寺（纯白佛塔）</div>
+            <div class="address-text" data-addr="般若寺 景洪">云南省西双版纳傣族自治州景洪市嘎洒镇曼真村后山上</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,般若寺 景洪&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="address-card">
+          <div class="address-icon">🌟</div>
+          <div class="address-body">
+            <div class="address-name">星光夜市（告庄西双景）</div>
+            <div class="address-text" data-addr="星光夜市 景洪">云南省西双版纳傣族自治州景洪市告庄西双景内（宣慰大道旁）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,星光夜市 景洪&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="restaurant-section">
+      <div class="restaurant-section-title">🍽️ 今日用餐推荐</div>
+      <div class="restaurant-list">
+        <div class="restaurant-card">
+          <span class="meal-tag lunch">午餐</span>
+          <div class="restaurant-body">
+            <div class="restaurant-name">傣·吗哪餐吧（曼听公园店）</div>
+            <div class="restaurant-info">傣味/云南菜，评分5.0。勐海烤鸡、手抓饭、现磨老挝冰咖啡、泡鲁达。环境干净，有室内卫生间，适合带小孩歇脚。曼听公园大门口斜对面，游览前后用餐都方便。</div>
+            <div class="address-text" data-addr="傣吗哪餐吧 曼听公园 景洪">云南省西双版纳傣族自治州景洪市曼听路曼听公园大门口斜对面春欢巷62号</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,傣吗哪餐吧 曼听公园 景洪&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="restaurant-card">
+          <span class="meal-tag dinner">晚餐</span>
+          <div class="restaurant-body">
+            <div class="restaurant-name">泰椰天香·江景六国料理</div>
+            <div class="restaurant-info">东南亚菜/六国料理，评分5.0。泰式冬阴功汤、泰式椒麻鸡、飞天通菜、芒果树庭院氛围。有儿童餐椅、停车位，孩子可选柠檬鸡翅、炒饭等温和菜品。</div>
+            <div class="address-text" data-addr="泰椰天香江景六国料理 告庄西双景">云南省西双版纳傣族自治州景洪市告庄西双景景宰寨39栋1-111号（星光夜市入口处）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,泰椰天香江景六国料理 告庄西双景&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ DAY 5 ============ -->
+  <div class="day" id="day5">
+    <div class="day-head">
+      <div>
+        <div class="who">DAY 5</div>
+        <h3>中科院西双版纳热带植物园 + 夜游</h3>
+      </div>
+      <div class="date-badge">9 月 29 日 · 周二（请假）</div>
+    </div>
+    <div class="badges" style="margin-bottom:16px;">
+      <span class="badge effort-较累">体力：较累</span>
+      <span class="badge weather">多云 23–31℃</span>
+    </div>
+    <div class="day-alert level-mid">
+      <span class="alert-emoji">🌴</span>
+      <span>植物园夜游须提前至少 1 天在官方小程序预约（当天 16:00 前可退）；夜游全程步行约 1 小时且无路灯，穿长裤、带驱蚊液和雨伞。</span>
+    </div>
+    <div class="meta-grid">
+      <div class="meta-item"><div class="k">住宿</div><div class="v">云投喜来登</div></div>
+      <div class="meta-item"><div class="k">交通</div><div class="v">租车（单程约 60km）</div></div>
+      <div class="meta-item"><div class="k">门票</div><div class="v">门票 + 车票已购，夜游待购</div></div>
+    </div>
+    <p class="plan">中科院植物园一日游 + 夜游 19:40–20:40（天气预报显示夜里阴天，下雨天也可以玩）。西区是核心景点（王莲池、奇花异卉园等），东区热带雨林可视体力取舍不去。门票约 80 元（儿童免费）+ 车票约 50 元（1.2m 以下免费），夜游讲解拼团约 90 元成人 + 45 元儿童。</p>
+    <div class="note-box">
+      <span class="label">💡 小贴士</span>
+      <ul>
+        <li>夜游必须<strong>提前至少 1 天</strong>通过官方"中国科学院西双版纳热带植物园"小程序预约，当天 16:00 前可无损退改。</li>
+        <li>夜游全程步行约 1 小时，多数路段没有路灯，建议穿长裤、不穿拖鞋，带好驱蚊液和雨伞；小雨可正常进行，暴风雨等极端天气会取消并退款。</li>
+        <li>西区单独逛通常也要 4–5 小时，如果孩子体力有限，东区可以完全跳过不影响体验。</li>
+      </ul>
+    </div>
+    <div class="address-section">
+      <div class="address-section-title">📍 今日目的地地址</div>
+      <div class="address-list">
+        <div class="address-card">
+          <div class="address-icon">🌴</div>
+          <div class="address-body">
+            <div class="address-name">中科院西双版纳热带植物园</div>
+            <div class="address-text" data-addr="中科院西双版纳热带植物园">云南省西双版纳傣族自治州勐腊县勐仑镇（葫芦岛上）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,中科院西双版纳热带植物园&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="restaurant-section">
+      <div class="restaurant-section-title">🍽️ 今日用餐推荐</div>
+      <div class="restaurant-list">
+        <div class="restaurant-card">
+          <span class="meal-tag lunch">午餐</span>
+          <div class="restaurant-body">
+            <div class="restaurant-name">绿竹楼傣府宴</div>
+            <div class="restaurant-info">傣味农家菜，评分4.1。推荐柠檬草烤鱼、香茅烤鱼、炸竹笋、拌野菜。有停车位，建议提前说明少辣、少香料，更适合孩子。</div>
+            <div class="address-text" data-addr="绿竹楼傣府宴 勐仑镇">云南省西双版纳傣族自治州勐腊县勐仑镇曼炸村8号（热带植物园附近）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,绿竹楼傣府宴 勐仑镇&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="restaurant-card">
+          <span class="meal-tag dinner">晚餐</span>
+          <div class="restaurant-body">
+            <div class="restaurant-name">水傣美食农家乐</div>
+            <div class="restaurant-info">农家菜/傣味，评分4.0。有包厢、可预订，适合6人家庭。夜游前后均可安排，可提前说明少辣。就在勐仑镇，离植物园很近。</div>
+            <div class="address-text" data-addr="水傣美食农家乐 勐仑镇">云南省西双版纳傣族自治州勐腊县勐仑镇曼炸村</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,水傣美食农家乐 勐仑镇&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ DAY 6 ============ -->
+  <div class="day" id="day6">
+    <div class="day-head">
+      <div>
+        <div class="who">DAY 6</div>
+        <h3>原始森林公园 or 基诺山雨林徒步</h3>
+      </div>
+      <div class="date-badge">9 月 30 日 · 周三（请假）</div>
+    </div>
+    <div class="badges" style="margin-bottom:16px;">
+      <span class="badge effort-适中">体力：适中</span>
+      <span class="badge weather">阵雨 22–34℃（待定）</span>
+    </div>
+    <div class="day-alert level-mid">
+      <span class="alert-emoji">🥾</span>
+      <span>基诺山徒步须提前 1 天预定；优先选巴朵线（4km 平缓溯溪，更适合低龄孩子），么卓线 7km+ 属进阶路线。雨鞋现场约 30 元/双。</span>
+    </div>
+    <div class="meta-grid">
+      <div class="meta-item"><div class="k">住宿</div><div class="v">云投喜来登</div></div>
+      <div class="meta-item"><div class="k">交通</div><div class="v">租车</div></div>
+    </div>
+
+    <div class="alt-plan" style="border-top:none; padding-top:0; margin-top:0;">
+      <span class="plan-label">Plan 1 · 原始森林公园</span>
+      <p class="plan">看孔雀放飞、逛爱伲山寨、走一段雨林。40–60 分钟车程，门票约 45 元，入园后可直接坐电瓶车（往返约 58 元，120cm 以下免票）到最上面的孔雀山庄，看一场孔雀放飞（场次以当天景区入口公示牌为准），付费喂孔雀互动，坐电瓶车到爱伲山寨（哈尼族 / 爱伲人的歌舞表演），可以让孩子跳跳竹竿舞；如果还有精力，附近走一小段雨林栈道，看看绞杀榕和树屋。</p>
+    </div>
+    <div class="alt-plan">
+      <span class="plan-label">Plan 2 · 基诺山雨林徒步</span>
+      <p class="plan">优先选巴朵线或么卓线。6 人小团，雨鞋一般现场购买（约 30 元/双），或选择"送雨鞋"的套餐，需<strong>提前一天预定</strong>。</p>
+      <div class="update-flag">
+        <b>⚠ 与最新公开信息有出入：</b> 多份近期实地反馈显示，巴朵线约 4 公里、八成路段是平缓溯溪，对低龄孩子更友好；么卓线目前普遍被归为 <b>7 公里以上、深入原始雨林的进阶路线</b>，体力要求明显更高，和"人少适合亲子"的描述不太一致。建议出发前直接和向导确认孩子能走哪条，稳妥起见优先巴朵线。
+      </div>
+    </div>
+
+    <div class="note-box">
+      <span class="label">💡 小贴士</span>
+      <ul>
+        <li>孔雀放飞每天有多个场次（各资料显示的具体时间点不完全一致），建议提前 10–15 分钟到放飞地点占位，一切以当天公示为准。</li>
+        <li>今天是国庆假期前最后一个工作日，不少人已提前出行，热门景区可能比平日略多人，但因为你们本身在版纳当地活动、不涉及长途出城，影响不大。</li>
+      </ul>
+    </div>
+    <div class="address-section">
+      <div class="address-section-title">📍 今日目的地地址</div>
+      <div class="address-list">
+        <div class="address-card">
+          <div class="address-icon">🦚</div>
+          <div class="address-body">
+            <div class="address-name">西双版纳原始森林公园</div>
+            <div class="address-text" data-addr="西双版纳原始森林公园">云南省西双版纳傣族自治州景洪市213国道旁（距景洪市区约8公里）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,西双版纳原始森林公园&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="address-card">
+          <div class="address-icon">🌳</div>
+          <div class="address-body">
+            <div class="address-name">基诺山雨林徒步（巴朵村入口）</div>
+            <div class="address-text" data-addr="基诺山巴朵村雨林徒步">云南省西双版纳傣族自治州景洪市基诺乡新司土村委会巴朵村</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,基诺乡巴朵村 景洪&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="restaurant-section">
+      <div class="restaurant-section-title">🍽️ 今日用餐推荐</div>
+      <div class="restaurant-list">
+        <div class="restaurant-card">
+          <span class="meal-tag lunch">午餐（原始森林公园）</span>
+          <div class="restaurant-body">
+            <div class="restaurant-name">孔雀山庄餐厅（景区内）</div>
+            <div class="restaurant-info">景区餐厅，评分4.5。特色炒菜、米线、野菜类菜品。在原始森林公园内第一景点处，就餐方便，不需额外出园找餐厅。若选基诺山徒步，可让向导安排农家饭或自带干粮。</div>
+            <div class="address-text" data-addr="孔雀山庄餐厅 原始森林公园 景洪">云南省西双版纳傣族自治州景洪市原始森林公园内景区第一景点</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,孔雀山庄餐厅 原始森林公园 景洪&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+        <div class="restaurant-card">
+          <span class="meal-tag dinner">晚餐</span>
+          <div class="restaurant-body">
+            <div class="restaurant-name">啰啰冰屋（景洪总店）</div>
+            <div class="restaurant-info">傣味小吃/冷饮老店，评分4.3。冬阴功炒饭、舂鸡脚、泡鲁达、红豆菠萝刨冰。儿童可选择炒饭、泡鲁达、冰沙等非辣小吃，品种丰富适合两个家庭一起点单分享。</div>
+            <div class="address-text" data-addr="啰啰冰屋 景洪总店">云南省西双版纳傣族自治州景洪市宣慰大道96号（建行斜对面）</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,啰啰冰屋 景洪总店&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ DAY 7 ============ -->
+  <div class="day" id="day7">
+    <div class="day-head">
+      <div>
+        <div class="who">DAY 7</div>
+        <h3>酒店活动日 / 市区自由活动</h3>
+      </div>
+      <div class="date-badge">10 月 1 日 · 周四</div>
+    </div>
+    <div class="badges" style="margin-bottom:16px;">
+      <span class="badge effort-轻松">体力：轻松</span>
+      <span class="badge weather">阵雨 22–34℃（待定）</span>
+      <span class="badge holiday">国庆假期第 1 天</span>
+    </div>
+    <div class="day-alert level-mid">
+      <span class="alert-emoji">🎉</span>
+      <span>国庆假期首日，告庄西双景等热门商圈晚饭后极度拥挤，若去市区建议避开 19:00–21:00 高峰时段，或直接留酒店休整更省心。</span>
+    </div>
+    <div class="meta-grid">
+      <div class="meta-item"><div class="k">住宿</div><div class="v">云投喜来登</div></div>
+      <div class="meta-item"><div class="k">交通</div><div class="v">打车</div></div>
+    </div>
+    <p class="plan">全天酒店活动（喂孔雀、篝火晚会等，不安排外出），或者去市区逛逛。</p>
+    <div class="note-box">
+      <span class="label">💡 小贴士</span>
+      <ul>
+        <li>今天是国庆假期第一天，告庄西双景等热门商圈晚饭后 1–2 小时通常最拥挤，若去市区建议避开这个时段，或直接留在酒店休整更省心。</li>
+        <li>2026 年国庆假期高速免费时段为 10 月 1 日 0 点至 10 月 7 日 24 点（7 座及以下小客车），仅供参考——你们的租车已在 9 月 30 日晚归还，本次行程用不上这项政策。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ DAY 8 ============ -->
+  <div class="day" id="day8">
+    <div class="day-head">
+      <div>
+        <div class="who">DAY 8</div>
+        <h3>返程</h3>
+      </div>
+      <div class="date-badge">10 月 2 日 · 周五</div>
+    </div>
+    <div class="badges" style="margin-bottom:16px;">
+      <span class="badge effort-轻松">体力：轻松</span>
+      <span class="badge holiday">国庆假期第 2 天</span>
+    </div>
+    <div class="day-alert level-high">
+      <span class="alert-emoji">✈️</span>
+      <span>国庆黄金周返程高峰，全国民航客流全年最高峰之一。建议提前 2.5–3 小时到嘎洒机场；南京中转 2 小时 5 分钟，留意第一段延误风险。</span>
+    </div>
+    <div class="meta-grid">
+      <div class="meta-item"><div class="k">住宿</div><div class="v">—</div></div>
+      <div class="meta-item"><div class="k">交通</div><div class="v">打车 + 飞机</div></div>
+    </div>
+    <p class="plan">自然醒，返程上海东航 13:45–20:30，南京中转停留 2 小时 5 分钟（茶颜悦色）。</p>
+    <div class="note-box">
+      <span class="label">💡 小贴士</span>
+      <ul>
+        <li>今天是国庆黄金周第 2 天，全国民航客流处于全年最高峰阶段之一，建议比平时更早出发去嘎洒机场（预留 2.5–3 小时），提前完成值机和行李托运。</li>
+        <li>南京中转 2 小时 5 分钟正常情况下够用，但假期期间建议提前值机、留意实时航班动态，避免第一段航班延误压缩转机时间。</li>
+        <li>中转间隙可以去茶颜悦色，也建议留一点缓冲，别踩着登机时间去排队。</li>
+      </ul>
+    </div>
+    <div class="address-section">
+      <div class="address-section-title">📍 今日目的地地址</div>
+      <div class="address-list">
+        <div class="address-card">
+          <div class="address-icon">✈️</div>
+          <div class="address-body">
+            <div class="address-name">西双版纳嘎洒国际机场</div>
+            <div class="address-text" data-addr="西双版纳嘎洒国际机场">云南省西双版纳傣族自治州景洪市机场公路</div>
+          </div>
+          <div class="address-actions">
+            <button class="addr-btn copy-btn" onclick="copyAddress(this)">📋 复制</button>
+            <a class="addr-btn nav-btn" href="https://uri.amap.com/navigation?to=,,西双版纳嘎洒国际机场&mode=car&policy=1&src=xsbn-trip&coordinate=gaode&callnative=1" target="_blank">🧭 导航</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ RENTAL SUMMARY ============ -->
+  <div class="section-title"><h2>租车安排</h2></div>
+  <div class="rental">
+    <div class="ic">🚗</div>
+    <div>
+      <h3>9 月 25 日 21:30 机场取车 → 9 月 30 日 21:30 酒店上门还车</h3>
+      <p>这段用车时间在国庆假期高速免费政策（10 月 1 日起）生效之前，按正常标准收费。机场取车、酒店上门还车属于异地 / 上门服务，建议取车前再确认一次是否产生额外手续费，以及基础保险的免赔额度。</p>
+    </div>
+  </div>
+
+  <footer>
+    行程信息主要来自原始计划，补充内容参考携程、去哪儿、官方公众号 / 小程序及公开新闻整理，票价、时刻、预约规则均可能随季节调整，请以景区当日公示和官方渠道为准。
+  </footer>
+
+<script>
+  var tripData = {
+    '9-25': { dayId: 'day1', title: 'Day 1 · 抵达西双版纳', desc: '上海浦东 → 嘎洒机场，入住云投喜来登。中秋假期首日，机场客流高，建议提前 2 小时到机场。' },
+    '9-26': { dayId: 'day2', title: 'Day 2 · 野象谷 · 曼掌村 · 傣族园', desc: '野象谷喂大象 + 曼掌村非遗手工 + 傣族园泼水 + 夜市。多景区串联，注意防晒防中暑，泼水带换洗衣物。' },
+    '9-27': { dayId: 'day3', title: 'Day 3 · 普洱太阳河森林公园', desc: '投喂小熊猫，往返约 250km。全程车程最长的一天，建议 8 点前出发，备好晕车药。' },
+    '9-28': { dayId: 'day4', title: 'Day 4 · 曼听公园 · 星光夜市', desc: '上午酒店休整，下午曼听公园傣装拍照 + 总佛寺，晚上星光夜市。轻松日，旅拍记得提前预约。' },
+    '9-29': { dayId: 'day5', title: 'Day 5 · 中科院热带植物园 + 夜游', desc: '植物园西区一日游 + 夜游 19:40。夜游须提前 1 天小程序预约，穿长裤防蚊。' },
+    '9-30': { dayId: 'day6', title: 'Day 6 · 原始森林公园 / 基诺山徒步', desc: '孔雀放飞 or 雨林徒步。基诺山须提前 1 天预定，优先巴朵线更适合亲子。今天是租车还车日。' },
+    '10-1': { dayId: 'day7', title: 'Day 7 · 酒店活动日', desc: '全天酒店活动（喂孔雀、篝火晚会）或市区自由活动。国庆假期首日，告庄商圈晚高峰极拥挤。' },
+    '10-2': { dayId: 'day8', title: 'Day 8 · 返程', desc: '返程上海，南京中转。国庆返程高峰，建议提前 2.5–3 小时到机场。' }
+  };
+
+  function initTodayFocus() {
+    var now = new Date();
+    var month = now.getMonth() + 1;
+    var date = now.getDate();
+    var key = month + '-' + date;
+    var info = tripData[key];
+
+    if (!info) return;
+
+    var focusEl = document.getElementById('todayFocus');
+    if (!focusEl) return;
+
+    document.getElementById('focusTitle').textContent = info.title;
+    document.getElementById('focusDesc').textContent = info.desc;
+    var linkEl = document.getElementById('focusLink');
+    linkEl.href = '#' + info.dayId;
+
+    focusEl.classList.add('active');
+
+    var dayCard = document.getElementById(info.dayId);
+    if (dayCard) dayCard.classList.add('is-today');
+
+    var calLink = document.querySelector('.cal-day[href="#' + info.dayId + '"]');
+    if (calLink) calLink.classList.add('is-today');
+
+    setTimeout(function() {
+      var rect = dayCard ? dayCard.getBoundingClientRect() : null;
+      if (rect && rect.top > window.innerHeight * 0.5) {
+        dayCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 600);
+  }
+
+  initTodayFocus();
+
+  function copyAddress(btn) {
+    var card = btn.closest('.address-card, .restaurant-card');
+    var addrEl = card.querySelector('.address-text');
+    var addr = addrEl.getAttribute('data-addr') || addrEl.textContent.trim();
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(addr).then(function() {
+        showCopied(btn);
+      }).catch(function() {
+        fallbackCopy(addr, btn);
+      });
+    } else {
+      fallbackCopy(addr, btn);
+    }
+  }
+
+  function fallbackCopy(text, btn) {
+    var textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    textarea.style.left = '-9999px';
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+      document.execCommand('copy');
+      showCopied(btn);
+    } catch (e) {
+      alert('复制失败，请手动复制：' + text);
+    }
+    document.body.removeChild(textarea);
+  }
+
+  function showCopied(btn) {
+    var originalText = btn.textContent;
+    btn.classList.add('copied');
+    btn.textContent = '✅ 已复制';
+    setTimeout(function() {
+      btn.classList.remove('copied');
+      btn.textContent = originalText;
+    }, 2000);
+  }
+
+  function navigateTo(name) {
+    var encodedName = encodeURIComponent(name);
+    var searchUrl = 'https://uri.amap.com/search?keyword=' + encodedName + '&callnative=1&src=xsbn-trip';
+
+    var isMobile = /Android|iPhone|iPad|iPod/.test(navigator.userAgent);
+    if (isMobile) {
+      var appScheme;
+      if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+        appScheme = 'iosamap://navi?sourceApplication=xsbn-trip&poiname=' + encodedName + '&dev=1&style=2';
+      } else {
+        appScheme = 'androidamap://navi?sourceApplication=xsbn-trip&poiname=' + encodedName + '&dev=1&style=2';
+      }
+
+      var timer = setTimeout(function() {
+        window.location.href = searchUrl;
+      }, 1500);
+
+      var onVisChange = function() {
+        if (document.hidden) {
+          clearTimeout(timer);
+          document.removeEventListener('visibilitychange', onVisChange);
+        }
+      };
+      document.addEventListener('visibilitychange', onVisChange);
+
+      window.location.href = appScheme;
+    } else {
+      window.open(searchUrl, '_blank');
+    }
+  }
+
+  document.querySelectorAll('.nav-btn').forEach(function(btn) {
+    var href = btn.getAttribute('href') || '';
+    var match = href.match(/to=,,([^&]+)/);
+    if (match) {
+      var name = decodeURIComponent(match[1]);
+      btn.setAttribute('href', 'https://uri.amap.com/search?keyword=' + encodeURIComponent(name) + '&callnative=1&src=xsbn-trip');
+      btn.removeAttribute('target');
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        navigateTo(name);
+      });
+    }
+  });
+</script>
+
+</div>
+
+</body>
+</html>
